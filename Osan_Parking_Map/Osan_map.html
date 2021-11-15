@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_37ca6d0f77354d42bd97785ca699450a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_37ca6d0f77354d42bd97785ca699450a" ></div>
+        
+</body>
+<script>    
+    
+            var map_37ca6d0f77354d42bd97785ca699450a = L.map(
+                "map_37ca6d0f77354d42bd97785ca699450a",
+                {
+                    center: [37.146351784415984, 127.07061341642824],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d0cbb93616eb415ba2c1ac0d436e3672 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+            var circle_marker_c6ccb3942f3d469491406874f6ff30b0 = L.circleMarker(
+                [37.1473365726427, 127.075678904018],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8620689655172413, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_d96571e88f8642c7a4731a3907b24ff4 = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_df921cefa7f344838561006e2893bb2c = $(`<div id="html_df921cefa7f344838561006e2893bb2c" style="width: 100.0%; height: 100.0%;">운암공영주차장 정보 : <br>총 주차공간 : 406<br>주차 가능한 공간 : 56대</div>`)[0];
+            popup_d96571e88f8642c7a4731a3907b24ff4.setContent(html_df921cefa7f344838561006e2893bb2c);
+        
+
+        circle_marker_c6ccb3942f3d469491406874f6ff30b0.bindPopup(popup_d96571e88f8642c7a4731a3907b24ff4)
+        ;
+
+        
+    
+    
+            var circle_marker_adc08e56702f432fa07b8706d4696e4a = L.circleMarker(
+                [37.1573941179928, 127.0548162609],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1.0782608695652174, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_c2c10f6117ec4fe1a6655fddd9eaa8cc = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_fce0ac2cd88c456280199372410abfca = $(`<div id="html_fce0ac2cd88c456280199372410abfca" style="width: 100.0%; height: 100.0%;">궐동공영주차장 정보 : <br>총 주차공간 : 230<br>주차 가능한 공간 : 106대</div>`)[0];
+            popup_c2c10f6117ec4fe1a6655fddd9eaa8cc.setContent(html_fce0ac2cd88c456280199372410abfca);
+        
+
+        circle_marker_adc08e56702f432fa07b8706d4696e4a.bindPopup(popup_c2c10f6117ec4fe1a6655fddd9eaa8cc)
+        ;
+
+        
+    
+    
+            var circle_marker_26dae826ec1e45a8818e81ba353aee0d = L.circleMarker(
+                [37.1444656515189, 127.071337531351],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6134969325153374, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_b238b3a4503445929d694154bfb561e3 = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_9f6ecee5360e470d8a4d4454c008b12b = $(`<div id="html_9f6ecee5360e470d8a4d4454c008b12b" style="width: 100.0%; height: 100.0%;">어울림(복개천)공영주차장 정보 : <br>총 주차공간 : 163<br>주차 가능한 공간 : 63대</div>`)[0];
+            popup_b238b3a4503445929d694154bfb561e3.setContent(html_9f6ecee5360e470d8a4d4454c008b12b);
+        
+
+        circle_marker_26dae826ec1e45a8818e81ba353aee0d.bindPopup(popup_b238b3a4503445929d694154bfb561e3)
+        ;
+
+        
+    
+    
+            var circle_marker_c8a3fdb0fb9a49d08a35cd62e2da09ed = L.circleMarker(
+                [37.1499864475752, 127.07703403504],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7957559681697612, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_82030f25a82a4e079157aecb56c80d95 = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_956594114f264b3ea37976d1b969b34b = $(`<div id="html_956594114f264b3ea37976d1b969b34b" style="width: 100.0%; height: 100.0%;">시청부설주차장 정보 : <br>총 주차공간 : 377<br>주차 가능한 공간 : 227대</div>`)[0];
+            popup_82030f25a82a4e079157aecb56c80d95.setContent(html_956594114f264b3ea37976d1b969b34b);
+        
+
+        circle_marker_c8a3fdb0fb9a49d08a35cd62e2da09ed.bindPopup(popup_82030f25a82a4e079157aecb56c80d95)
+        ;
+
+        
+    
+    
+            var circle_marker_86154a0e40b74cedbbd45f9e953a28f0 = L.circleMarker(
+                [37.1479878256375, 127.065232285802],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9907834101382489, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_2e7ddb9324784996b30888d6947c4f94 = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_d46d6282ee9e4f02ae7348479ab458f3 = $(`<div id="html_d46d6282ee9e4f02ae7348479ab458f3" style="width: 100.0%; height: 100.0%;">오산역환승주차장 정보 : <br>총 주차공간 : 217<br>주차 가능한 공간 : 2대</div>`)[0];
+            popup_2e7ddb9324784996b30888d6947c4f94.setContent(html_d46d6282ee9e4f02ae7348479ab458f3);
+        
+
+        circle_marker_86154a0e40b74cedbbd45f9e953a28f0.bindPopup(popup_2e7ddb9324784996b30888d6947c4f94)
+        ;
+
+        
+    
+    
+            var circle_marker_bffc5b3410f747c2b602f81b2577ffd8 = L.circleMarker(
+                [37.1440824164981, 127.067203735291],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8653846153846154, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_91a05e6746bd4d27ab721c23739ee4e7 = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_25d12d0e17064347b291374d0d399729 = $(`<div id="html_25d12d0e17064347b291374d0d399729" style="width: 100.0%; height: 100.0%;">오산역 제2환승주차장 정보 : <br>총 주차공간 : 104<br>주차 가능한 공간 : 14대</div>`)[0];
+            popup_91a05e6746bd4d27ab721c23739ee4e7.setContent(html_25d12d0e17064347b291374d0d399729);
+        
+
+        circle_marker_bffc5b3410f747c2b602f81b2577ffd8.bindPopup(popup_91a05e6746bd4d27ab721c23739ee4e7)
+        ;
+
+        
+    
+    
+            var circle_marker_31d1c7f5575f4155b5582d33e6f4a03c = L.circleMarker(
+                [37.1526136384232, 127.068463818988],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_0e82f79ff91d44d58100da7339c97888 = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_624d664bfabe4fe3ab9a05570bcb36f1 = $(`<div id="html_624d664bfabe4fe3ab9a05570bcb36f1" style="width: 100.0%; height: 100.0%;">오색시장 제1공영주차장 정보 : <br>총 주차공간 : 108<br>주차 가능한 공간 : 0대</div>`)[0];
+            popup_0e82f79ff91d44d58100da7339c97888.setContent(html_624d664bfabe4fe3ab9a05570bcb36f1);
+        
+
+        circle_marker_31d1c7f5575f4155b5582d33e6f4a03c.bindPopup(popup_0e82f79ff91d44d58100da7339c97888)
+        ;
+
+        
+    
+    
+            var circle_marker_dd24b72163e549058121841c663bbfba = L.circleMarker(
+                [37.1482417489766, 127.065566177804],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_1a217527e0bf41bcb312bab70ff7a16a = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_3f87aae75d0543ac93a76442dbe5b482 = $(`<div id="html_3f87aae75d0543ac93a76442dbe5b482" style="width: 100.0%; height: 100.0%;">오산대역환승주차장 정보 : <br>총 주차공간 : 100<br>주차 가능한 공간 : 70대</div>`)[0];
+            popup_1a217527e0bf41bcb312bab70ff7a16a.setContent(html_3f87aae75d0543ac93a76442dbe5b482);
+        
+
+        circle_marker_dd24b72163e549058121841c663bbfba.bindPopup(popup_1a217527e0bf41bcb312bab70ff7a16a)
+        ;
+
+        
+    
+    
+            var circle_marker_b2ce9cc4cd96432398b6e07d8dbc22fc = L.circleMarker(
+                [37.187343194782, 127.043566305912],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8857142857142857, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_1a2ad1ec57564195aa3a23b51ee0ef48 = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_67ed72d845d44006a904650279b75b09 = $(`<div id="html_67ed72d845d44006a904650279b75b09" style="width: 100.0%; height: 100.0%;">세마역환승주차장 정보 : <br>총 주차공간 : 70<br>주차 가능한 공간 : 8대</div>`)[0];
+            popup_1a2ad1ec57564195aa3a23b51ee0ef48.setContent(html_67ed72d845d44006a904650279b75b09);
+        
+
+        circle_marker_b2ce9cc4cd96432398b6e07d8dbc22fc.bindPopup(popup_1a2ad1ec57564195aa3a23b51ee0ef48)
+        ;
+
+        
+    
+    
+            var circle_marker_527c08a6e5f84bd79e81bbac38a74f19 = L.circleMarker(
+                [37.1549692905847, 127.069576172796],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_962c867bb6fd4302955514a9c766c848 = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_dd8792b5065a41ec9395dd1df3d7b9f3 = $(`<div id="html_dd8792b5065a41ec9395dd1df3d7b9f3" style="width: 100.0%; height: 100.0%;">오색시장 제2공영주차장 정보 : <br>총 주차공간 : 200<br>주차 가능한 공간 : 40대</div>`)[0];
+            popup_962c867bb6fd4302955514a9c766c848.setContent(html_dd8792b5065a41ec9395dd1df3d7b9f3);
+        
+
+        circle_marker_527c08a6e5f84bd79e81bbac38a74f19.bindPopup(popup_962c867bb6fd4302955514a9c766c848)
+        ;
+
+        
+    
+    
+            var circle_marker_a286174f02b64ec1826e82924eacb67d = L.circleMarker(
+                [37.145838302457, 127.068061550216],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5128205128205128, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_90cdd3094c384a118211128291e2ae0c = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_56530d68f4384ebeb0b1a7383754fe6a = $(`<div id="html_56530d68f4384ebeb0b1a7383754fe6a" style="width: 100.0%; height: 100.0%;">문화의거리 임시공영주차장 정보 : <br>총 주차공간 : 78<br>주차 가능한 공간 : 58대</div>`)[0];
+            popup_90cdd3094c384a118211128291e2ae0c.setContent(html_56530d68f4384ebeb0b1a7383754fe6a);
+        
+
+        circle_marker_a286174f02b64ec1826e82924eacb67d.bindPopup(popup_90cdd3094c384a118211128291e2ae0c)
+        ;
+
+        
+    
+    
+            var circle_marker_7ca2a2f27b174ab7adebfe4628c65eee = L.circleMarker(
+                [37.1461179745002, 127.070815337062],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_d55ab4f5f2c84b81a84b82cd77a4b03b = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_3ede801dd52342909cd81a89930b3b52 = $(`<div id="html_3ede801dd52342909cd81a89930b3b52" style="width: 100.0%; height: 100.0%;">문화의거리 제2공영주차장 정보 : <br>총 주차공간 : 40<br>주차 가능한 공간 : 35대</div>`)[0];
+            popup_d55ab4f5f2c84b81a84b82cd77a4b03b.setContent(html_3ede801dd52342909cd81a89930b3b52);
+        
+
+        circle_marker_7ca2a2f27b174ab7adebfe4628c65eee.bindPopup(popup_d55ab4f5f2c84b81a84b82cd77a4b03b)
+        ;
+
+        
+    
+    
+            var circle_marker_61e6d9ab25674e1289290caffae99cdc = L.circleMarker(
+                [37.1347345649362, 127.072378375282],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.828125, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_a4a07fdc5d054e7d9fee59c91c017238 = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_3a35229904664f818ba043582bc8c3ff = $(`<div id="html_3a35229904664f818ba043582bc8c3ff" style="width: 100.0%; height: 100.0%;">원동복개도로 정보 : <br>총 주차공간 : 64<br>주차 가능한 공간 : 11대</div>`)[0];
+            popup_a4a07fdc5d054e7d9fee59c91c017238.setContent(html_3a35229904664f818ba043582bc8c3ff);
+        
+
+        circle_marker_61e6d9ab25674e1289290caffae99cdc.bindPopup(popup_a4a07fdc5d054e7d9fee59c91c017238)
+        ;
+
+        
+    
+    
+            var circle_marker_f774e72184ca42328d74907571ded963 = L.circleMarker(
+                [37.1482029589103, 127.068073694578],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17, "stroke": true, "weight": 3}
+            ).addTo(map_37ca6d0f77354d42bd97785ca699450a);
+        
+    
+        var popup_5d7e3a23def445b78e6f6fae0536f675 = L.popup({"maxWidth": 500, "minWidth": 100});
+
+        
+            var html_55f70f6d5dc840b2bb38da45aa3ebd0f = $(`<div id="html_55f70f6d5dc840b2bb38da45aa3ebd0f" style="width: 100.0%; height: 100.0%;">철도변노상주차장 정보 : <br>총 주차공간 : 30<br>주차 가능한 공간 : 0대</div>`)[0];
+            popup_5d7e3a23def445b78e6f6fae0536f675.setContent(html_55f70f6d5dc840b2bb38da45aa3ebd0f);
+        
+
+        circle_marker_f774e72184ca42328d74907571ded963.bindPopup(popup_5d7e3a23def445b78e6f6fae0536f675)
+        ;
+
+        
+    
+</script>
